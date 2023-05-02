@@ -1,15 +1,11 @@
 {
     "compilerOptions": {
-      "target": "es5",
-      "module": "esnext",
-      "strict": true,
-      "jsx": "preserve",
-      "importHelpers": true,
-      "moduleResolution": "node",
-      "skipLibCheck": true,
-      "esModuleInterop": true,
+      "target": "esnext",
       "allowSyntheticDefaultImports": true,
-      "sourceMap": true,
+      "moduleResolution": "node",
+      "allowJs": true,
+      "checkJs": false,
+      "jsx": "react-jsx",
       "baseUrl": ".",
       "paths": {
         "/@/*": [
@@ -20,6 +16,6 @@
       "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
       "types": ["vite/client", "node"]
     },
-    "include": ["src/**/*"],
+    "include": ["./src/**/*.ts", "./src/**/*.tsx"],
     "exclude": ["node_modules"]
   }
